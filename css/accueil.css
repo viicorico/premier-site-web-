@@ -1,0 +1,135 @@
+<!-- POLICE >
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+<!-- FIN POLICE>
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #222; /* Couleur principale sombre */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.banner img {
+    width: 100%; /* Ajustez la largeur de l'image à 100% de la largeur du conteneur */
+    height: auto; /* Pour maintenir le rapport hauteur/largeur */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.nav-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-menu ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f39c12; /* Couleur vive pour effet hover */
+}
+
+.main-content {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    background-color: #f9f9f9; /* Couleur de fond claire pour le contenu */
+}
+
+
+
+footer {
+    clear: both;
+    background-color: #222; /* Couleur de fond sombre pour le pied de page */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
