@@ -31,7 +31,9 @@ body{
     height: 100%; 
 }
 
-
+.menu_droite {
+  margin-left: 280px; /* Assurez-vous que cela correspond à la largeur de votre menu de gauche */
+}
 #premiernav .onglets{
   display:flex;
   flex-wrap:wrap;
@@ -87,7 +89,7 @@ body{
 }
 
 .nav-menu a {
-    color: #fff;
+    color: #131212;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
@@ -110,7 +112,7 @@ header{
 .menu_gauche {
     margin-top: 101px;
     height: 100%;
-    width: 200px;
+    width: 170px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -121,12 +123,13 @@ header{
   }
   
   .menu_gauche a {
-        display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    justify-content: center;
     font-size: 25px;
     color: #818181;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    ;
 
   }
   
