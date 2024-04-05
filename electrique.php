@@ -40,9 +40,9 @@
             <td>1 158,00€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'g01')">-</button>
-              <span id="quantity-g01" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'g01')">+</button>
+              <button onclick="changeQuantite('decrease', this, 'ge01')">-</button>
+              <span id="quantity-ge01" class="quantity">0</span>
+              <button onclick="changeQuantite('increase', this, 'ge01')">+</button>
             </td>
           </tr>
           <tr>
@@ -57,9 +57,9 @@
             <td>1 391,13</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'g01')">-</button>
-              <span id="quantity-g01" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'g01')">+</button>
+              <button onclick="changeQuantite('decrease', this, 'ge02')">-</button>
+              <span id="quantity-ge02" class="quantity">0</span>
+              <button onclick="changeQuantite('increase', this, 'ge02')">+</button>
             </td>
           </tr>
           <tr>
@@ -74,9 +74,9 @@
             <td>500€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'g01')">-</button>
-              <span id="quantity-g01" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'g01')">+</button>
+              <button onclick="changeQuantite('decrease', this, 'ge03')">-</button>
+              <span id="quantity-ge03" class="quantity">0</span>
+              <button onclick="changeQuantite('increase', this, 'ge03')">+</button>
             </td>
           </tr>
           <tr>
@@ -91,9 +91,9 @@
             <td>500€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'g01')">-</button>
-              <span id="quantity-g01" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'g01')">+</button>
+              <button onclick="changeQuantite('decrease', this, 'ge04')">-</button>
+              <span id="quantity-ge04" class="quantity">0</span>
+              <button onclick="changeQuantite('increase', this, 'ge04')">+</button>
             </td>
           </tr>
           <tr> <tr>
@@ -107,19 +107,24 @@
             <td>500€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'g01')">-</button>
-              <span id="quantity-g01" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'g01')">+</button>
+              <button onclick="changeQuantite('decrease', this, 'ge05')">-</button>
+              <span id="quantity-ge05" class="quantity">0</span>
+              <button onclick="changeQuantite('increase', this, 'ge05')">+</button>
             </td>
           </tr>
           
         </tbody>
 
       </table>
-       
+      <button onclick="toggleStockVisibility()">Afficher/Cacher le Stock</button>
+      <div id="modal" style="display:none;">
+        <span onclick="closeModal()" style="cursor:pointer;">Fermer</span>
+        <img id="modal-image" style="max-width: 500px;">
+      </div>
     </section>
   </main>
   <!-- Le reste de votre contenu HTML ici -->
-</main>
+
+  <script src="./js/action_catalogue.js"></script>
 </body>
 </html>
