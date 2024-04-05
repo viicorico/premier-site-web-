@@ -1,3 +1,4 @@
+<!DOCTYPE HTML> 
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -10,26 +11,22 @@
   <?php include 'php/navfixe.php'; ?>
   <!-- Fin de la barre de navigation -->
   <main> 
-      <section class="page" id="page">
-         <!-- début du menu droit -->
-      <div class="contenu_droite">
+    <section class="page" id="page">
       <?php include 'php/deuxiemenav.php'; ?>
       <!-- Header -->
       <header>
           <div class="banner">
-              <img src="img/banniere.jpg" alt="Bannière">
+              <img src="img/banniere3.jpg" alt="Bannière">
           </div>
       </header>
       <!-- Fin du header -->
-    </div>
-    <!-- Fin du menu droit -->
 
     <?php include 'php/menu_gauche.php'; ?>
-  
+
     <!-- Informations -->
     
     <!-- Fin des informations -->
-  </section>
+    </section>
   
   <!-- Pied de page -->
   <footer>
@@ -64,7 +61,7 @@
       <p>Frenchcoder, France</p>
     </footer>
   <!-- Fin du pied de page -->
-  
+
 </main>
 
 </body>

@@ -1,9 +1,10 @@
+<!DOCTYPE HTML>
 <html lang="fr"></html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Comment Créer un beau Formulaire de Contact en HTML & CSS</title>
+    <title>Formulaire de Contact</title>
     <link rel="stylesheet" href="css/style_formulaire.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>

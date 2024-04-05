@@ -11,7 +11,7 @@
   <?php include 'php/navfixe.php'; ?>
   <?php include 'php/menu_gauche.php'; ?>
   <header>
-    <h1 class="electrique-titre">Catalogue de Guitares Électriques</h1>
+    <h1 class="ampli-titre">Catalogue d'Amplis</h1>
   </header>
 
   <main>
@@ -35,8 +35,7 @@
             </div>
             </td>
             <td>g01</td>
-            <td>  FENDER JIMI HENDRIX STRATOCASTER </td>
-            
+            <td>Guitare Électrique Modèle 1</td>
             <td>500€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
@@ -49,11 +48,11 @@
           <tr>
             <td >
             <div class="cellule_img">
-              <img src="https://guitarmaniac.com/23127-large_default/fender-joe-strummer-telecaster-rw-black-etui.jpg" alt="Guitare Électrique Modèle 2" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+              <img src="https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg" alt="Guitare Électrique Modèle 1" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
             </div>
             </td>
             <td>g01</td>
-            <td> FENDER JOE STRUMMER TELECASTER </td>
+            <td>Guitare Électrique Modèle 1</td>
             <td>500€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body{
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
   color: #000000;
@@ -8,8 +8,10 @@ body{
 }
 
 main {
-  margin-left: 170px; /* Correspond à la largeur du menu gauche */
+  margin-left: 122px; /* Correspond à la largeur du menu gauche */
 }
+
+
 
 /* Barre de navigation */
 #navfixe{
@@ -19,19 +21,8 @@ main {
   align-items: center;
   position:sticky;
   top: 0;
-  background-color: #040300;
-  padding: 30px 0px;
-}
-#navfixe .onglets{
-  display:flex;
-  flex-wrap:wrap;
-  margin-top: 5px;
-  padding-left: 120px;
-}
-
-#navfixe .onglets a {
-  margin-right: 20px;
-  cursor:pointer;
+  background-color: #773c3c;
+  padding: 40px 0px;
 }
 #navfixe .buttons button{
   padding: 13px 20px;
@@ -43,11 +34,12 @@ main {
 }
 #navfixe .buttons .login{
   background-color: inherit;
-  margin-right: 10px;
-  color: #8f8f8f;
+  margin-left: 1500px;
+  color: #ffffff;
 }
 #navfixe .buttons .register{
   background-color: #7c0000e5;
+  margin-left: auto;
 }
 .logo {
     display: block;
@@ -64,14 +56,14 @@ main {
 /* Fin de la premiere barre de navigation*/
 
 .menu_gauche {
-  margin-top: 101px;
+  margin-top: 120px;
   height: 100%;
-  width: 170px;
+  width: 122px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #040300;
+  background-color: #773c3c;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -86,9 +78,7 @@ main {
   text-decoration: none;
 }
 /* Styles spécifiques à la page d'accueil */
-.contenu_droite {
-  margin-left: 170px; /* Correspond à la largeur du menu gauche */
-}
+
 
 .banner img {
     width: 100%; /* Ajustez la largeur de l'image à 100% de la largeur du conteneur */
@@ -129,7 +119,7 @@ main {
 /* Header */
 header{
   margin-top: 40px;
-  background: url('/img/banniere.jpg');
+  background: url('/img/banniere3.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -142,7 +132,7 @@ footer{
   background-color: #fff;
   padding: 25px 100px;
   color:#828282;
-  margin-left: 170px;
+  margin-left: 0px;
 }
 footer .colonnes{
   display: flex;
@@ -175,8 +165,53 @@ footer .colonnes{
   text-align: center;
 }
 
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  z-index: 1000;
+  display: none;
+}
 
+#modal img {
+  width: auto; /* Ajustez la taille comme nécessaire */
+  height: auto;
+  max-width: 100%; /* Assurez-vous que l'image ne dépasse pas les dimensions de la modal */
+  max-height: 80vh; /* Limite la hauteur pour éviter de dépasser l'écran */
+}
 
+.stock-amount {
+  display: none; /* Caché par défaut */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.cellule_img {
+  text-align: center;
+}
+
+th, td {
+  padding: 05px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+.page_electrique {
+  padding: 20px 20px; /* Correction: appliquer le padding au conteneur de la page pour centrer le tableau */
+}
 /* FIN Styles spécifiques à la page des guitares électriques */
 
 
