@@ -31,8 +31,8 @@ body{
     height: 100%; 
 }
 
-.menu_droite {
-  margin-left: 280px; /* Assurez-vous que cela correspond à la largeur de votre menu de gauche */
+.menu_droit {
+  margin-left: 170px; /* Correspond à la largeur du menu gauche */
 }
 #premiernav .onglets{
   display:flex;
