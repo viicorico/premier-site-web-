@@ -17,16 +17,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Vérifier si les mots de passe correspondent
         if ($mot_de_passe === $confirm_mot_de_passe) {
             // Charger les données des utilisateurs existants depuis le fichier JSON
-            $utilisateurs_json = file_get_contents('utilisateurs.json');
+            $utilisateurs_json = file_get_contents('./json/utilisateurs.json');
             $utilisateurs = json_decode($utilisateurs_json, true);
 
             // Vérifier si l'utilisateur existe déjà
             if (isset($utilisateurs[$login])) {
-                header('Location: inscription.php?erreur=login_existe');
+                header('Location: ./php/inscription.php?erreur=login_existe');
                 exit;
             }
             if (isset($utilisateurs[$email])) {
-                header('Location: inscription.php?erreur=email_existe');
+                header('Location: ./php/inscription.php?erreur=email_existe');
                 exit;
             }
 
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $json_data = json_encode($utilisateurs);
 
             // Écriture des données dans un fichier JSON
-            $file_name = 'utilisateurs.json';
+            $file_name = './json/utilisateurs.json';
             file_put_contents($file_name, $json_data);
 
             // Redirection vers la page index.html avec un message de confirmation
@@ -56,12 +56,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit;
         } else {
             // Les mots de passe ne correspondent pas, redirection vers le formulaire avec un message d'erreur
-            header('Location: inscription.php?erreur=mot_de_passe');
+            header('Location: ./php/inscription.php?erreur=mot_de_passe');
             exit;
         }
     } else {
         // Certains champs requis ne sont pas remplis, redirection vers le formulaire avec un message d'erreur
-        header('Location: inscription.php?erreur=champs_requis');
+        header('Location: ./php/inscription.php?erreur=champs_requis');
         exit;
     }
 }

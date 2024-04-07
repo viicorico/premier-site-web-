@@ -35,12 +35,12 @@
     <script>
         // Fonction pour la connexion
         function connexion() {
-            window.location.href = "connexion.php";
+            window.location.href = "./php/connexion.php";
         }
 
         // Fonction pour la déconnexion
         function deconnexion() {
-            window.location.href = "deconnexion.php";
+            window.location.href = "./php/deconnexion.php";
         }
     </script>
 

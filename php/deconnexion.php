@@ -15,7 +15,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
     exit(); // Assure que le code suivant n'est pas exécuté une fois la redirection effectuée
 } else {
     // Si l'utilisateur n'est pas connecté, redirige-le vers la page de connexion
-    header('Location: connexion.php');
+    header('Location: ./php/connexion.php');
     exit();
 }
 ?>
