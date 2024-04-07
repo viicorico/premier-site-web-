@@ -24,6 +24,10 @@ main {
   background-color: #773c3c;
   padding: 40px 0px;
 }
+#navfixe .buttons {
+  margin-left: auto; /* Cela pousse le conteneur .buttons vers la droite */
+}
+
 #navfixe .buttons button{
   padding: 13px 20px;
   color: #fff;
@@ -34,12 +38,11 @@ main {
 }
 #navfixe .buttons .login{
   background-color: inherit;
-  margin-left: 1500px;
   color: #ffffff;
 }
 #navfixe .buttons .register{
   background-color: #7c0000e5;
-  margin-left: auto;
+  margin-right: 10px;
 }
 .logo {
     display: block;
@@ -65,7 +68,7 @@ main {
   left: 0;
   background-color: #773c3c;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 60px;
 }
 
 .menu_gauche a {
@@ -156,7 +159,7 @@ footer .colonnes{
     font-size: 30px;
     padding: 100px;
   }
-}
+
 /* FIN Styles spécifiques à la page d'accueil */
 
 /* Styles spécifiques à la page des guitares électriques */
