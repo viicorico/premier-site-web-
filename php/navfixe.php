@@ -1,3 +1,9 @@
+<?php
+// Démarrer la session au tout début du fichier
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <nav id="navfixe">
     <a href="index.html" class="logo">
         <img src="img/logo.PNG" alt="Guitar Gallery">
@@ -6,7 +12,6 @@
         <!-- <button class="login">J'ai déjà un compte</button>
         <button class="register">S'enregistrer</button> -->
         <?php
-        session_start();
         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
             // Si l'utilisateur est connecté, affiche seulement le bouton "Se déconnecter"
             // Notez que j'ai changé l'action en 'deconnexion()' pour correspondre au script JS

@@ -1,3 +1,9 @@
+<?php
+// Démarrer la session au tout début du fichier
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE HTML> 
 <html lang="fr">
 <head>
@@ -63,15 +69,5 @@
   <!-- Fin du pied de page -->
 
 </main>
-<?php
-    session_start(); // Démarrer la session
-    if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
-        // Si l'utilisateur est connecté, affiche un bouton "Se déconnecter"
-        echo '<div class="login-button" onclick="deconnexion()">Se déconnecter</div>';
-    } else {
-        // Sinon, affiche un bouton "Se connecter"
-        echo '<div class="login-button" onclick="connexion()">Se connecter</div>';
-    }
-    ?>
 </body>
 </html>
