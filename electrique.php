@@ -54,7 +54,7 @@
             </td>
             <td>ge02</td>
             <td> FENDER JOE STRUMMER TELECASTER </td>
-            <td>1 391,13</td>
+            <td>1 391,13€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
               <button onclick="changeQuantite('decrease', this, 'ge02')">-</button>
@@ -66,12 +66,12 @@
           <tr>
             <td >
             <div class="cellule_img">
-              <img src="https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg" alt="Guitare Électrique Modèle 1" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+              <img src="https://guitarmaniac.com/17039-large_default/prs-se-custom-22-semi-hollow-santana-yellow-housse.jpg" alt="Guitare Électrique Modèle 3" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
             </div>
             </td>
             <td>ge03</td>
-            <td>Guitare Électrique Modèle 1</td>
-            <td>500€</td>
+            <td>PRS SE CUSTOM SANTANA </td>
+            <td>985,00€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
               <button onclick="changeQuantite('decrease', this, 'ge03')">-</button>
@@ -83,12 +83,12 @@
           <tr>
             <td >
             <div class="cellule_img">
-              <img src="https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg" alt="Guitare Électrique Modèle 1" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+              <img src="https://guitarmaniac.com/13652-large_default/squier-mini-jazzmaster-hh-mn-daphne-blue.jpg" alt="Guitare Électrique Modèle 4" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
             </div>
             </td>
             <td>ge04</td>
-            <td>Guitare Électrique Modèle 1</td>
-            <td>500€</td>
+            <td>SQUIER MINI JAZZMASTER</td>
+            <td>169,00€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
               <button onclick="changeQuantite('decrease', this, 'ge04')">-</button>
@@ -99,12 +99,12 @@
           <tr> <tr>
             <td >
             <div class="cellule_img">
-              <img src="https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg" alt="Guitare Électrique Modèle 1" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+               <img src="https://guitarmaniac.com/27979-large_default/ibanez-s770-czm-cosmic-blue-frozen-matte.jpg" alt="Guitare Électrique Modèle 5" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
             </div>
             </td>
             <td>ge05</td>
-            <td>Guitare Électrique Modèle 1</td>
-            <td>500€</td>
+            <td>IBANEZ COSMIC BLUE</td>
+            <td>949,00€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
               <button onclick="changeQuantite('decrease', this, 'ge05')">-</button>
