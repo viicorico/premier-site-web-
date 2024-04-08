@@ -1,6 +1,6 @@
 <nav id="navfixe">
-    <a href="index.html" class="logo">
-        <img src="img/logo.PNG" alt="Guitar Gallery">
+    <a href="/index.html" class="logo">
+        <img src="/img/logo.PNG" alt="Guitar Gallery">
     </a>
     <div class="buttons">
         <!-- <button class="login">J'ai déjà un compte</button>
@@ -18,6 +18,6 @@
     }
         echo '<button class="register" onclick="enregistrer()">S\'enregistrer</button>';
     ?>
-    <script src="js/connexion.js"></script>
+    <script src="/js/connexion.js"></script>
     </div>
 </nav>

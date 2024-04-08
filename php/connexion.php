@@ -2,7 +2,7 @@
 session_start();
 
 function lire_utilisateur($login) {
-    $fichier = '../json/utilisateurs.json';
+    $fichier = '/json/utilisateurs.json';
     if (file_exists($fichier)) {
         $contenu_fichier = file_get_contents($fichier);
         $utilisateurs = json_decode($contenu_fichier, true);
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Authentification réussie, marque l'utilisateur comme connecté
         $_SESSION["logged_in"] = true;
         $_SESSION["login"] = $login; // Stocke le login de l'utilisateur dans la session
-        rediriger("../index.php");
+        rediriger("/index.php");
     } else {
         // Identifiants incorrects, redirection vers la page de connexion avec un message d'erreur
         header('Location: connexion.php?erreur=identifiants_incorrects');
@@ -62,6 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="password" id="mot_de_passe" name="mot_de_passe"><br><br>
         <input type="submit" value="Se connecter">
     </form>
-    <p>Vous n'avez pas de compte? <a href="/DevGuitare/php/inscription.php">Créez votre compte ici</a>.</p>
+    <p>Vous n'avez pas de compte? <a href="/php/inscription.php">Créez votre compte ici</a>.</p>
 </body>
 </html>
