@@ -39,9 +39,9 @@
             <td>679,00€</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'ga01')">-</button>
+              <button onclick="changeQuantite('decrease', this, 'ga01')">-</button>
               <span id="quantity-ga01" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'ga01')">+</button>
+              <button onclick="changeQuantite('increase', this, 'ga01')">+</button>
             </td>
           </tr>
           <tr>
@@ -56,16 +56,16 @@
             <td>349,00 €</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'ga02')">-</button>
+              <button onclick="changeQuantite('decrease', this, 'ga02')">-</button>
               <span id="quantity-ga02" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'ga02')">+</button>
+              <button onclick="changeQuantite('increase', this, 'ga02')">+</button>
             </td>
           </tr>
           <tr>
           <tr>
             <td >
             <div class="cellule_img">
-              <img src="https://guitarmaniac.com/28229-home_default/lag-t70ace-bls-black-satin.jpg" alt="Guitare Acoustique Modèle 3" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+              <img src="https://guitarmaniac.com/28229-large_default/lag-t70ace-bls-black-satin.jpg" alt="Guitare Acoustique Modèle 3" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
             </div>
             </td>
             <td>ga03</td>
@@ -73,16 +73,16 @@
             <td>279,00 €</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'ga03')">-</button>
+              <button onclick="changeQuantite('decrease', this, 'ga03')">-</button>
               <span id="quantity-ga03" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'ga03')">+</button>
+              <button onclick="changeQuantite('increase', this, 'ga03')">+</button>
             </td>
           </tr>
           <tr>
           <tr>
             <td >
             <div class="cellule_img">
-              <img src="https://guitarmaniac.com/27467-home_default/fender-highway-series-parlor-rw-natural-housse.jpg" alt="Guitare Acoustique Modèle 4" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+              <img src="https://guitarmaniac.com/27467-large_default/fender-highway-series-parlor-rw-natural-housse.jpg" alt="Guitare Acoustique Modèle 4" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
             </div>
             </td>
             <td>ga04</td>
@@ -90,15 +90,15 @@
             <td>1 035,00 €</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'ga04')">-</button>
+              <button onclick="changeQuantite('decrease', this, 'ga04')">-</button>
               <span id="quantity-ga04" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'ga04')">+</button>
+              <button onclick="changeQuantite('increase', this, 'ga04')">+</button>
             </td>
           </tr>
           <tr> <tr>
             <td >
             <div class="cellule_img">
-              <img src="https://guitarmaniac.com/27178-home_default/fender-newporter-player-wn-sunburst.jpg" alt="Guitare Acoustique Modèle 5" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+              <img src="https://guitarmaniac.com/27178-large_default/fender-newporter-player-wn-sunburst.jpg" alt="Guitare Acoustique Modèle 5" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
             </div>
             </td>
             <td>ga05</td>
@@ -106,9 +106,9 @@
             <td>339,00 €</td>
             <td class="stock-amount" style="display:none;">15</td>
             <td>
-              <button onclick="changeQuantity('decrease', this, 'ga05')">-</button>
+              <button onclick="changeQuantite('decrease', this, 'ga05')">-</button>
               <span id="quantity-ga05" class="quantity">0</span>
-              <button onclick="changeQuantity('increase', this, 'ga05')">+</button>
+              <button onclick="changeQuantite('increase', this, 'ga05')">+</button>
             </td>
           </tr>
           
