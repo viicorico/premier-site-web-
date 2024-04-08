@@ -9,7 +9,7 @@
 
 <h2>Créer un compte</h2>
 
-<form action="/php/traitement.php" method="post">
+<form action="./traitement.php" method="post">
     <label for="prenom">Prénom :</label><br>
     <input type="text" id="prenom" name="prenom" required><br><br>
 

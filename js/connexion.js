@@ -1,6 +1,6 @@
 // Fonction pour la connexion
 function connexion() {
-    window.location.href = "/DevGuitare/php/connexion.php";
+    window.location.href = "./php/connexion.php";
 }
 
 // Fonction pour la déconnexion
