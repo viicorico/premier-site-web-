@@ -162,7 +162,7 @@ footer .colonnes{
 }
 /* FIN Styles spécifiques à la page d'accueil */
 
-/* Styles spécifiques à la page des guitares électriques */
+/* Styles spécifiques à la page des guitares,acoustiques et amplis */
 
 .electrique-titre {
   text-align: center;
@@ -215,6 +215,5 @@ button {
 .page_electrique {
   padding: 20px 20px; /* Correction: appliquer le padding au conteneur de la page pour centrer le tableau */
 }
-/* FIN Styles spécifiques à la page des guitares électriques */
 
 
