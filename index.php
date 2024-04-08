@@ -10,24 +10,24 @@ if (session_status() == PHP_SESSION_NONE) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Site complet moderne</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <!-- Barre de navigation -->
-  <?php include 'php/navfixe.php'; ?>
+  <?php include './php/navfixe.php'; ?>
   <!-- Fin de la barre de navigation -->
   <main> 
     <section class="page" id="page">
-      <?php include 'php/deuxiemenav.php'; ?>
+      <?php include './php/deuxiemenav.php'; ?>
       <!-- Header -->
       <header>
           <div class="banner">
-              <img src="img/banniere3.jpg" alt="Bannière">
+              <img src="./img/banniere3.jpg" alt="Bannière">
           </div>
       </header>
       <!-- Fin du header -->
 
-    <?php include 'php/menu_gauche.php'; ?>
+    <?php include './php/menu_gauche.php'; ?>
 
     <!-- Informations -->
     

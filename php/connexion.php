@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         rediriger("../index.php");
     } else {
         // Identifiants incorrects, redirection vers la page de connexion avec un message d'erreur
-        header('Location: connexion.php?erreur=identifiants_incorrects');
+        header('Location: ./connexion.php?erreur=identifiants_incorrects');
         exit();
     }
 }
