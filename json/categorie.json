@@ -1,0 +1,79 @@
+{
+    "Electrique": [
+      {
+        "reference": "ge01",
+        "description": "FENDER JIMI HENDRIX STRATOCASTER",
+        "prix": 1158.00,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/13652-large_default/squier-mini-jazzmaster-hh-mn-daphne-blue.jpg"
+      },
+      {
+        "reference": "ge02",
+        "description": "FENDER JOE STRUMMER TELECASTER",
+        "prix": 1391.13,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/23127-large_default/fender-joe-strummer-telecaster-rw-black-etui.jpg"
+      },
+      {
+        "reference": "ga01",
+        "description": "Amplificateur Fender",
+        "prix": 599.99,
+        "stock": 10,
+        "image": "https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg"
+      }
+    ],
+    "Acoustique": [
+      {
+        "reference": "ga01",
+        "description": "TAKAMINE CENAT",
+        "prix": 679.00,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/24327-large_default/takamine-gd93cenat.jpg"
+      },
+      {
+        "reference": "ga02",
+        "description": "YAMAHA ORIENTAL BLUE BURST",
+        "prix": 349.00,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/16758-large_default/yamaha-apx600-obb-oriental-blue-burst.jpg"
+      },
+      {
+        "reference": "ga03",
+        "description": "LÂG BLACK SATIN",
+        "prix": 279.00,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/28229-home_default/lag-t70ace-bls-black-satin.jpg"
+      },
+      {
+        "reference": "ga04",
+        "description": "FENDER HIGHWAY SERIES",
+        "prix": 1035.00,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/27467-home_default/fender-highway-series-parlor-rw-natural-housse.jpg"
+      },
+      {
+        "reference": "ga05",
+        "description": "FENDER NEWPORTER PLAYER SUNBURST",
+        "prix": 339.00,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/27178-home_default/fender-newporter-player-wn-sunburst.jpg"
+      }
+    ],
+    "Amplificateur": [
+      {
+        "reference": "ge03",
+        "description": "Amplificateur Fender",
+        "prix": 0.99,
+        "stock": 1,
+        "image": "https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg"
+      },
+      {
+        "reference": "ge04",
+        "description": "Amplificateur Marshall",
+        "prix": 799.99,
+        "stock": 8,
+        "image": "https://example.com/marshall_amplifier.jpg"
+      }
+    ]
+  }
+  

@@ -1,3 +1,7 @@
+<?php
+session_start();
+include 'php/varSession.inc.php';
+?>
 <!DOCTYPE HTML>
 <html lang="fr">
 <head>
@@ -28,93 +32,27 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td >
-            <div class="cellule_img">
-              <img src="https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg" alt="Guitare Électrique Modèle 1" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
-            </div>
-            </td>
-            <td>ge01</td>
-            <td>  FENDER JIMI HENDRIX STRATOCASTER </td>
-            
-            <td>1 158,00€</td>
-            <td class="stock-amount" style="display:none;">15</td>
-            <td>
-              <button onclick="changeQuantite('decrease', this, 'ge01')">-</button>
-              <span id="quantity-ge01" class="quantity">0</span>
-              <button onclick="changeQuantite('increase', this, 'ge01')">+</button>
-            </td>
-          </tr>
-          <tr>
-          <tr>
-            <td >
-            <div class="cellule_img">
-              <img src="https://guitarmaniac.com/23127-large_default/fender-joe-strummer-telecaster-rw-black-etui.jpg" alt="Guitare Électrique Modèle 2" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
-            </div>
-            </td>
-            <td>ge02</td>
-            <td> FENDER JOE STRUMMER TELECASTER </td>
-            <td>1 391,13€</td>
-            <td class="stock-amount" style="display:none;">15</td>
-            <td>
-              <button onclick="changeQuantite('decrease', this, 'ge02')">-</button>
-              <span id="quantity-ge02" class="quantity">0</span>
-              <button onclick="changeQuantite('increase', this, 'ge02')">+</button>
-            </td>
-          </tr>
-          <tr>
-          <tr>
-            <td >
-            <div class="cellule_img">
-              <img src="https://guitarmaniac.com/17039-large_default/prs-se-custom-22-semi-hollow-santana-yellow-housse.jpg" alt="Guitare Électrique Modèle 3" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
-            </div>
-            </td>
-            <td>ge03</td>
-            <td>PRS SE CUSTOM SANTANA </td>
-            <td>985,00€</td>
-            <td class="stock-amount" style="display:none;">15</td>
-            <td>
-              <button onclick="changeQuantite('decrease', this, 'ge03')">-</button>
-              <span id="quantity-ge03" class="quantity">0</span>
-              <button onclick="changeQuantite('increase', this, 'ge03')">+</button>
-            </td>
-          </tr>
-          <tr>
-          <tr>
-            <td >
-            <div class="cellule_img">
-              <img src="https://guitarmaniac.com/13652-large_default/squier-mini-jazzmaster-hh-mn-daphne-blue.jpg" alt="Guitare Électrique Modèle 4" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
-            </div>
-            </td>
-            <td>ge04</td>
-            <td>SQUIER MINI JAZZMASTER</td>
-            <td>169,00€</td>
-            <td class="stock-amount" style="display:none;">15</td>
-            <td>
-              <button onclick="changeQuantite('decrease', this, 'ge04')">-</button>
-              <span id="quantity-ge04" class="quantity">0</span>
-              <button onclick="changeQuantite('increase', this, 'ge04')">+</button>
-            </td>
-          </tr>
-          <tr> <tr>
-            <td >
-            <div class="cellule_img">
-               <img src="https://guitarmaniac.com/27979-large_default/ibanez-s770-czm-cosmic-blue-frozen-matte.jpg" alt="Guitare Électrique Modèle 5" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
-            </div>
-            </td>
-            <td>ge05</td>
-            <td>IBANEZ COSMIC BLUE</td>
-            <td>949,00€</td>
-            <td class="stock-amount" style="display:none;">15</td>
-            <td>
-              <button onclick="changeQuantite('decrease', this, 'ge05')">-</button>
-              <span id="quantity-ge05" class="quantity">0</span>
-              <button onclick="changeQuantite('increase', this, 'ge05')">+</button>
-            </td>
-          </tr>
-          
-        </tbody>
 
+        <?php foreach ($_SESSION['categories']['Electrique'] as $index => $produit): ?>
+          <tr>
+            <td>
+              <div class="cellule_img">
+                <img src="<?php echo $produit['image']; ?>" alt="<?php echo $produit['description']; ?>" onclick="openModal(this.src)" style="cursor: pointer; max-width: 100%; height: auto; max-height: 150px;">
+              </div>
+            </td>
+            <td><?php echo $produit['reference']; ?></td>
+            <td><?php echo $produit['description']; ?></td>
+            <td><?php echo $produit['prix']; ?>€</td>
+            <td class="stock-amount" style="display:none;"><?php echo $produit['stock']; ?></td>
+            <td>
+              <button onclick="changeQuantite('decrease', this, '<?php echo $index; ?>')">-</button>
+              <span id="quantity-<?php echo $index; ?>" class="quantity">0</span>
+              <button onclick="changeQuantite('increase', this, '<?php echo $index; ?>')">+</button>
+              <button onclick="commanderProduit('<?php echo $index; ?>', '<?php echo htmlspecialchars($produit['description']); ?>')">Commander</button>
+            </td>
+          </tr>
+        <?php endforeach; ?>
+        </tbody>
       </table>
       <button onclick="toggleStockVisibility()">Afficher/Cacher le Stock</button>
       <div id="modal" style="display:none;">
@@ -123,8 +61,18 @@
       </div>
     </section>
   </main>
-  <!-- Le reste de votre contenu HTML ici -->
 
-  <script src="./js/action_catalogue.js"></script>
+  <script src="./js/quantite_stock_gestion.js"></script>
+  <script>
+    function commanderProduit(index, description) {
+        var quantity = document.getElementById('quantity-' + index).innerHTML;
+        if (parseInt(quantity) > 0) {
+            alert("Commande du produit :\n" + description + "\nQuantité : " + quantity);
+            // Ici, vous pouvez implémenter la logique de commande, comme l'envoi de la commande au serveur
+        } else {
+            alert("Veuillez sélectionner au moins une unité du produit avant de commander.");
+        }
+    }
+  </script>
 </body>
 </html>
