@@ -1,9 +1,13 @@
+<?php
+session_start();
+include 'php/varSession.inc.php';
+?>
 <!DOCTYPE HTML>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guitare Acoustiques</title>
+  <title>Guitare acoustique</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -44,7 +48,7 @@
               <button onclick="changeQuantite('decrease', this, '<?php echo $index; ?>')">-</button>
               <span id="quantity-<?php echo $index; ?>" class="quantity">0</span>
               <button onclick="changeQuantite('increase', this, '<?php echo $index; ?>')">+</button>
-              <button onclick="commanderProduit('<?php echo $index; ?>', '<?php echo $produit['description']; ?>')">Commander</button>
+              <button onclick="commanderProduit('<?php echo $index; ?>', '<?php echo htmlspecialchars($produit['description']); ?>')">Commander</button>
             </td>
           </tr>
         <?php endforeach; ?>
