@@ -11,10 +11,10 @@
     }
     if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
         // Si l'utilisateur est connecté, affiche un bouton "Se déconnecter"
-        echo '<button class="login" onclick="deconnexion()">se déconnecter</button>';
+        echo '<button class="login" onclick="deconnexion()">Se déconnecter</button>';
     } else {
         // Sinon, affiche un bouton "Se connecter"
-        echo '<button class="login" onclick="connexion()">se connecter</button>';     
+        echo '<button class="login" onclick="connexion()">Se connecter</button>';     
     }
         echo '<button class="register" onclick="enregistrer()">S\'enregistrer</button>';
     ?>

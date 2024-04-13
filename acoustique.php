@@ -32,8 +32,23 @@ include 'php/varSession.inc.php';
           </tr>
         </thead>
         <tbody>
-
-        <?php foreach ($_SESSION['categories']['Acoustique'] as $index => $produit): ?>
+          <tr>
+            <td >
+            <div class="cellule_img">
+              <img src="https://guitarmaniac.com/24327-large_default/takamine-gd93cenat.jpg" alt="Guitare Acoustique Modèle 1" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+            </div>
+            </td>
+            <td>ga01</td>
+            <td>TAKAMINE CENAT</td>
+            <td>679,00€</td>
+            <td class="stock-amount" style="display:none;">15</td>
+            <td>
+              <button onclick="changeQuantity('decrease', this, 'ga01')">-</button>
+              <span id="quantity-ga01" class="quantity">0</span>
+              <button onclick="changeQuantity('increase', this, 'ga01')">+</button>
+            </td>
+          </tr>
+          <tr>
           <tr>
             <td>
               <div class="cellule_img">
@@ -45,13 +60,62 @@ include 'php/varSession.inc.php';
             <td><?php echo $produit['prix']; ?>€</td>
             <td class="stock-amount" style="display:none;"><?php echo $produit['stock']; ?></td>
             <td>
-              <button onclick="changeQuantite('decrease', this, '<?php echo $index; ?>')">-</button>
-              <span id="quantity-<?php echo $index; ?>" class="quantity">0</span>
-              <button onclick="changeQuantite('increase', this, '<?php echo $index; ?>')">+</button>
-              <button onclick="commanderProduit('<?php echo $index; ?>', '<?php echo htmlspecialchars($produit['description']); ?>')">Commander</button>
+              <button onclick="changeQuantity('decrease', this, 'ga02')">-</button>
+              <span id="quantity-ga02" class="quantity">0</span>
+              <button onclick="changeQuantity('increase', this, 'ga02')">+</button>
             </td>
           </tr>
-        <?php endforeach; ?>
+          <tr>
+          <tr>
+            <td >
+            <div class="cellule_img">
+              <img src="https://guitarmaniac.com/28229-home_default/lag-t70ace-bls-black-satin.jpg" alt="Guitare Acoustique Modèle 3" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+            </div>
+            </td>
+            <td>ga03</td>
+            <td>LÂG BLACK SATIN</td>
+            <td>279,00 €</td>
+            <td class="stock-amount" style="display:none;">15</td>
+            <td>
+              <button onclick="changeQuantity('decrease', this, 'ga03')">-</button>
+              <span id="quantity-ga03" class="quantity">0</span>
+              <button onclick="changeQuantity('increase', this, 'ga03')">+</button>
+            </td>
+          </tr>
+          <tr>
+          <tr>
+            <td >
+            <div class="cellule_img">
+              <img src="https://guitarmaniac.com/27467-home_default/fender-highway-series-parlor-rw-natural-housse.jpg" alt="Guitare Acoustique Modèle 4" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+            </div>
+            </td>
+            <td>ga04</td>
+            <td>FENDER HIGHWAY SERIES </td>
+            <td>1 035,00 €</td>
+            <td class="stock-amount" style="display:none;">15</td>
+            <td>
+              <button onclick="changeQuantity('decrease', this, 'ga04')">-</button>
+              <span id="quantity-ga04" class="quantity">0</span>
+              <button onclick="changeQuantity('increase', this, 'ga04')">+</button>
+            </td>
+          </tr>
+          <tr> <tr>
+            <td >
+            <div class="cellule_img">
+              <img src="https://guitarmaniac.com/27178-home_default/fender-newporter-player-wn-sunburst.jpg" alt="Guitare Acoustique Modèle 5" onclick="openModal(this.src)" style="cursor: pointer; max-width: 150px;">
+            </div>
+            </td>
+            <td>ga05</td>
+            <td>FENDER NEWPORTER PLAYER SUNBURST</td>
+            <td>339,00 €</td>
+            <td class="stock-amount" style="display:none;">15</td>
+            <td>
+              <button onclick="changeQuantity('decrease', this, 'ga05')">-</button>
+              <span id="quantity-ga05" class="quantity">0</span>
+              <button onclick="changeQuantity('increase', this, 'ga05')">+</button>
+            </td>
+          </tr>
+          
         </tbody>
       </table>
       <button onclick="toggleStockVisibility()">Afficher/Cacher le Stock</button>
