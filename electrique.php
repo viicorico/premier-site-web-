@@ -1,7 +1,3 @@
-<?php
-session_start();
-include 'php/varSession.inc.php';
-?>
 <!DOCTYPE HTML>
 <html lang="fr">
 <head>
