@@ -73,7 +73,28 @@
         "prix": 799.99,
         "stock": 8,
         "image": "https://example.com/marshall_amplifier.jpg"
+      },
+      {"reference": "ge04",
+      "description": "Amplificateur Marshall",
+      "prix": 799.99,
+      "stock": 8,
+      "image": "https://example.com/marshall_amplifier.jpg"
+      },
+    
+      {"reference": "ge04",
+      "description": "Amplificateur Marshall",
+      "prix": 799.99,
+      "stock": 8,
+      "image": "https://example.com/marshall_amplifier.jpg"
+      },
+    
+      {"reference": "ge04",
+      "description": "Amplificateur Marshall",
+      "prix": 799.99,
+      "stock": 8,
+      "image": "https://example.com/marshall_amplifier.jpg"
       }
+      
     ]
   }
   
