@@ -64,4 +64,47 @@
       </div>
     </form>
   </body>
+  
+  <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            var isValid = true;
+
+            // Vérification du nom et prénom (au moins 2 caractères)
+            var nomInput = document.getElementById("nom");
+            var prenomInput = document.getElementById("prenom");
+            if (nomInput.value.length < 2 || prenomInput.value.length < 2) {
+                nomInput.classList.add("error");
+                prenomInput.classList.add("error");
+                isValid = false;
+            } else {
+                nomInput.classList.remove("error");
+                prenomInput.classList.remove("error");
+            }
+
+            // Vérification de l'email (format valide)
+            var emailInput = document.getElementById("email");
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                emailInput.classList.add("error");
+                isValid = false;
+            } else {
+                emailInput.classList.remove("error");
+            }
+
+            // Vérification du métier (sélectionné)
+            var metierInput = document.getElementById("metier");
+            if (metierInput.value === "") {
+                metierInput.classList.add("error");
+                isValid = false;
+            } else {
+                metierInput.classList.remove("error");
+            }
+
+            if (!isValid) {
+                event.preventDefault(); // Empêche l'envoi du formulaire si des erreurs sont présentes
+            }
+        });
+    </script>
+</body>
+</html>
 </html>
