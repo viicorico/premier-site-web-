@@ -37,35 +37,8 @@ if (session_status() == PHP_SESSION_NONE) {
   <!-- Pied de page -->
   <footer>
       <h5>Des questions ? Appelez le 0474-998-740</h5>
-      <div class="colonnes">
-        <div class="colonne">
-          <p>Relations clients</p>
-          <p>Relations Investisseurs</p>
-          <p>Modes de lecture</p>
-          <p>Mentions légales</p>
-        </div>
-        <div class="colonne">
-          <p>Centre d'aide</p>
-          <p>Les meilleurs graphistes</p>
-          <p>Entreprise mondiale</p>
-          <p>Chiffre d'affaire</p>
-          <p>Les meilleurs peintres</p>
-        </div>
-        <div class="colonne">
-          <p>FAQ</p>
-          <p>Recrutement</p>
-          <p>Conditions d'utilisation</p>
-          <p>Nous contacter</p>
-        </div>
-        <div class="colonne">
-          <p>Compte</p>
-          <p>S'enregistrer</p>
-          <p>Se connecter</p>
-          <p>Nous contacter</p>
-        </div>
-      </div>
-      <p>Frenchcoder, France</p>
-    </footer>
+      <p class="copyright"> 2024 Your Company. All rights reserved.</p>
+  </footer>
   <!-- Fin du pied de page -->
 
 </main>

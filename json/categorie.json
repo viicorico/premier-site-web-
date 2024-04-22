@@ -5,7 +5,7 @@
         "description": "FENDER JIMI HENDRIX STRATOCASTER",
         "prix": 1158.00,
         "stock": 15,
-        "image": "https://guitarmaniac.com/13652-large_default/squier-mini-jazzmaster-hh-mn-daphne-blue.jpg"
+        "image": "https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg"
       },
       {
         "reference": "ge02",
@@ -15,11 +15,25 @@
         "image": "https://guitarmaniac.com/23127-large_default/fender-joe-strummer-telecaster-rw-black-etui.jpg"
       },
       {
-        "reference": "ga01",
-        "description": "Amplificateur Fender",
-        "prix": 599.99,
+        "reference": "ge03",
+        "description": "PRS SE CUSTOM SANTANA ",
+        "prix": 985.00,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/17039-large_default/prs-se-custom-22-semi-hollow-santana-yellow-housse.jpg"
+      },
+      {
+        "reference": "ge04",
+        "description": "SQUIER MINI JAZZMASTER",
+        "prix": 169.00,
+        "stock": 15,
+        "image": "https://guitarmaniac.com/13652-large_default/squier-mini-jazzmaster-hh-mn-daphne-blue.jpg"
+      },
+      {
+        "reference": "ge05",
+        "description": "IBANEZ COSMIC BLUE",
+        "prix": 949.99,
         "stock": 10,
-        "image": "https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg"
+        "image": "https://guitarmaniac.com/27979-large_default/ibanez-s770-czm-cosmic-blue-frozen-matte.jpg"
       }
     ],
     "Acoustique": [
@@ -61,19 +75,40 @@
     ],
     "Amplificateur": [
       {
-        "reference": "ge03",
-        "description": "Amplificateur Fender",
-        "prix": 0.99,
-        "stock": 1,
-        "image": "https://guitarmaniac.com/18339-large_default/fender-jimi-hendrix-stratocaster-mn-olympic-white.jpg"
+        "reference": "a01",
+        "description": "FENDER TONE MASTER DELUXE REVERB",
+        "prix": 1035.00,
+        "stock": 6,
+        "image": "https://guitarmaniac.com/22716-large_default/fender-tone-master-deluxe-reverb.jpg"
       },
       {
-        "reference": "ge04",
-        "description": "Amplificateur Marshall",
-        "prix": 799.99,
+        "reference": "a02",
+        "description": "BLACKSTAR HT-5R MKII",
+        "prix": 1391.13,
         "stock": 8,
-        "image": "https://example.com/marshall_amplifier.jpg"
+        "image": "https://guitarmaniac.com/19545-large_default/blackstar-ht-5r-mkii-.jpg"
+      },
+      {"reference": "a03",
+      "description": "BOSS KATANA 50 MKII",
+      "prix": 259.00,
+      "stock": 8,
+      "image": "https://guitarmaniac.com/9841-large_default/boss-katana-50-mkii.jpg"
+      },
+    
+      {"reference": "a04",
+      "description": "FENDER BLUES JUNIOR IV BRITISH RACING GREEN",
+      "prix": 779.99,
+      "stock": 8,
+      "image": "https://guitarmaniac.com/25862-large_default/fender-blues-junior-iv-british-racing-green-magasin-de-musique-nice-monaco.jpg"
+      },
+    
+      {"reference": "a05",
+      "description": "BLACKSTAR DEBUT 10E",
+      "prix": 79.99,
+      "stock": 8,
+      "image": "https://guitarmaniac.com/26866-large_default/blackstar-debut-10e.jpg"
       }
+      
     ]
   }
   

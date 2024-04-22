@@ -1,10 +1,9 @@
 <?php
-// Vérifiez si la session n'est pas déjà active avant d'appeler session_start()
+// afin de vérifier si la session n'est pas déjà active 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Chemin relatif vers le fichier JSON
 $json_file_path = './json/categorie.json';
 
 // Charger les données JSON depuis le fichier

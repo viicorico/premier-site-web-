@@ -137,10 +137,10 @@ footer{
   color:#828282;
   margin-left: 0px;
 }
-footer .colonnes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.copyright {
+  font-size: 50px;
+  color: #999;
+  text-align: center; /* Pour centrer horizontalement sur les navigateurs non flex */
 }
 /* Fin du pied de page */
 
@@ -213,7 +213,7 @@ button {
   cursor: pointer;
 }
 .page_electrique {
-  padding: 20px 20px; /* Correction: appliquer le padding au conteneur de la page pour centrer le tableau */
+  padding: 20px 20px; 
 }
 
 
