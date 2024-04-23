@@ -63,39 +63,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // et les variables $nomErr, $prenomErr, etc. pour afficher les messages d'erreur à côté des champs correspondants
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire de Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .icon {
-            margin-right: 5px;
-        }
-        .error {
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <h1><i class="fas fa-envelope icon"></i>Contactez-nous</h1>
-    <form id="contactForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <!-- Vos champs de formulaire ici -->
-
-        <input type="submit" value="Envoyer">
-    </form>
-
-    <script>
-        // Code JavaScript pour afficher les messages d'erreur à côté des champs invalides (si nécessaire)
-    </script>
-</body>
-</html>
-
-<?php
-    }
-} else {
-    echo "Une erreur s'est produite lors du traitement du formulaire.";
-}
-?>
