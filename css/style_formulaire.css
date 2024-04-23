@@ -1,10 +1,9 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #550a21;
+  background-color: #550a0a;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14,8 +13,8 @@ body {
 }
 
 form {
-  padding: 30px;
-  background-color: white;
+  padding: 50px;
+  background-color: rgba(0, 247, 255, 0.745);
   border-radius: 10px;
 }
 form h1 {
@@ -51,15 +50,16 @@ form .corps-formulaire .gauche .groupe i {
   padding: 9px 8px;
   color: #747cdf;
 }
+
 form .corps-formulaire .droite {
-  margin-left: 40px;
+  margin-left: 70px;
 }
 form .corps-formulaire .droite .groupe {
   height: 100%;
 }
 form .corps-formulaire .droite .groupe textarea {
   margin-top: 5px;
-  padding: 10px;
+  padding: 20px;
   background-color: #f1f1f1;
   border: 2px solid #747cdf;
   outline: none;
