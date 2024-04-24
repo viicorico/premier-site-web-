@@ -46,22 +46,85 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B0000; /* Rouge foncé */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #800000; /* Rouge un peu plus foncé au survol */
+}
+
+
+        .error-message {
+            color: #8B0000;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
+
+<div class="container">
     <h2>Connexion</h2>
     <?php
     // Afficher un message d'erreur le cas échéant
     if (isset($_GET['erreur']) && $_GET['erreur'] === 'identifiants_incorrects') {
-        echo "<p>Identifiants incorrects. Veuillez réessayer.</p>";
+        echo "<p class='error-message'>Identifiants incorrects. Veuillez réessayer.</p>";
     }
     ?>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="login">Login :</label><br>
-        <input type="text" id="login" name="login"><br>
+        <input type="text" id="login" name="login" required><br>
         <label for="mot_de_passe">Mot de passe :</label><br>
-        <input type="password" id="mot_de_passe" name="mot_de_passe"><br><br>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
         <input type="submit" value="Se connecter">
     </form>
     <p>Vous n'avez pas de compte? <a href="./inscription.php">Créez votre compte ici</a>.</p>
+</div>
+
 </body>
 </html>
