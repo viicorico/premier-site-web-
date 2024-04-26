@@ -63,4 +63,10 @@ include 'php/varSession.inc.php';
 
   <script src="./js/quantite_stock_gestion.js"></script>
 </body>
+<!-- Pied de page -->
+  <footer>
+    <?php include './php/pied_page.php'; ?>
+  </footer>
+  <!-- Fin du pied de page -->
+
 </html>

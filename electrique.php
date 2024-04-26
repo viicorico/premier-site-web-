@@ -75,4 +75,9 @@ include 'php/varSession.inc.php';
     }
   </script>
 </body>
+<!-- Pied de page -->
+<footer>
+    <?php include './php/pied_page.php'; ?>
+  </footer>
+  <!-- Fin du pied de page -->
 </html>
