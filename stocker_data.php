@@ -33,15 +33,15 @@ function insererProduits($connexion, $produits) {
 }
 
 // Fonction pour insérer les données des clients dans la base de données
-function insererClients($connexion, $clients) {
-    foreach ($clients as $client) {
-        $prenom = $connexion->real_escape_string($client['prenom']);
-        $nom = $connexion->real_escape_string($client['nom']);
-        $login = $connexion->real_escape_string($client['login']);
-        $email = $connexion->real_escape_string($client['email']);
-        $mot_de_passe = $connexion->real_escape_string($client['mot_de_passe']);
-        $date_naissance = $connexion->real_escape_string($client['date_naissance']);
-        $adresse = $connexion->real_escape_string($client['adresse']);
+function insererClients($connexion, $utilisateurs) {
+    foreach ($utilisateurs as $utilisateur) {
+        $prenom = $connexion->real_escape_string($utilisateu['prenom']);
+        $nom = $connexion->real_escape_string($utilisateu['nom']);
+        $login = $connexion->real_escape_string($utilisateu['login']);
+        $email = $connexion->real_escape_string($utilisateu['email']);
+        $mot_de_passe = $connexion->real_escape_string($utilisateu['mot_de_passe']);
+        $date_naissance = $connexion->real_escape_string($utilisateu['date_naissance']);
+        $adresse = $connexion->real_escape_string($utilisateu['adresse']);
 
         $requete = "INSERT INTO clients (prenom, nom, login, email, mot_de_passe, date_naissance, adresse) VALUES ('$prenom', '$nom', '$login','$email','$mot_de_passe', '$date_naissance','$adresse')";
         if (!$connexion->query($requete)) {
@@ -61,10 +61,10 @@ if(isset($_SESSION['produits'])) {
 
 
 // Récupérer les données des clients depuis $_SESSION
-if(isset($_SESSION['clients'])) {
-    $clients = $_SESSION['clients']; 
+if(isset($_SESSION['utilisateus'])) {
+    $utilisateus = $_SESSION['utilisateus']; 
 
-    insererClients($connexion, $clients);
+    insererClients($connexion, $utilisateus);
 } else {
     echo "Erreur: aucune donnée de clients trouvée dans la session.";
 }
