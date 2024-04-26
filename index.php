@@ -37,7 +37,7 @@ if (session_status() == PHP_SESSION_NONE) {
   <!-- Pied de page -->
   <footer>
       <h5>Des questions ? Appelez le 0474-998-740</h5>
-      <p class="copyright"> 2024 Your Company. All rights reserved.</p>
+      <p class="copyright"> 2024 Guitar Gallery. All rights reserved.</p>
   </footer>
   <!-- Fin du pied de page -->
 
