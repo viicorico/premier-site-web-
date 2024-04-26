@@ -68,7 +68,7 @@ include 'php/varSession.inc.php';
         var quantity = document.getElementById('quantity-' + index).innerHTML;
         if (parseInt(quantity) > 0) {
             alert("Commande du produit :\n" + description + "\nQuantité : " + quantity);
-            // Ici, vous pouvez implémenter la logique de commande, comme l'envoi de la commande au serveur
+            
         } else {
             alert("Veuillez sélectionner au moins une unité du produit avant de commander.");
         }
