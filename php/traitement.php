@@ -22,11 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Vérifier si l'utilisateur existe déjà
             if (isset($utilisateurs[$login])) {
-                header('Location: inscription.php?erreur=login_existe');
+                echo "<script>alert('Le nom d\\'utilisateur existe déjà');</script>";
+                echo "<script>window.location.replace('inscription.php');</script>";
                 exit;
             }
             if (isset($utilisateurs[$email])) {
-                header('Location: inscription.php?erreur=email_existe');
+                echo "<script>alert('L\\'adresse e-mail existe déjà');</script>";
+                echo "<script>window.location.replace('inscription.php');</script>";
                 exit;
             }
 
@@ -53,26 +55,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Vérifier si l'écriture dans le fichier JSON a réussi
             if ($result === false) {
-                // En cas d'échec de l'écriture, rediriger avec un message d'erreur
-                header('Location: inscription.php?erreur=ecriture_fichier');
+                // En cas d'échec de l'écriture, afficher une alerte d'erreur
+                echo "<script>alert('Erreur lors de l\\'écriture des données');</script>";
+                echo "<script>window.location.replace('inscription.php');</script>";
                 exit;
             }
 
             // Redirection vers la page index.html avec un message de confirmation
-            header('Location: ../index.php?confirmation=compte_cree');
+            echo "<script>alert('Compte créé avec succès');</script>";
+            echo "<script>window.location.replace('../index.php');</script>";
             exit;
         } else {
-            // Les mots de passe ne correspondent pas, redirection vers le formulaire avec un message d'erreur
-            header('Location: inscription.php?erreur=mot_de_passe');
+            // Les mots de passe ne correspondent pas, afficher une alerte d'erreur
+            echo "<script>alert('Les mots de passe ne correspondent pas');</script>";
+            echo "<script>window.location.replace('inscription.php');</script>";
             exit;
         }
     } else {
-        // Certains champs requis ne sont pas remplis, redirection vers le formulaire avec un message d'erreur
-        header('Location: inscription.php?erreur=champs_requis');
+        // Certains champs requis ne sont pas remplis, afficher une alerte d'erreur
+        echo "<script>alert('Tous les champs sont requis');</script>";
+        echo "<script>window.location.replace('inscription.php');</script>";
         exit;
     }
-}
-?>
-
 }
 ?>
