@@ -54,7 +54,7 @@ function insererClients($connexion, $utilisateurs) {
 if(isset($_SESSION['sousCategories'])) {
     $sousCategories = $_SESSION['sousCategories']; 
 
-    insererProduits($connexion, $psousCategories);
+    insererProduits($connexion, $sousCategories);
 } else {
     echo "Erreur: aucune donnée de produits trouvée dans la session.";
 }
